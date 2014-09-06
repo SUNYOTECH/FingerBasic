@@ -16,6 +16,7 @@
 #include "MinuDesc.h"
 #include "MinuDescMCC.h"
 #include "MinuMatchTico.h"
+#include "MatchScoreFormula.h"
 
 char g_fpPath[2][_MAX_PATH];
 char g_featurePath[2][_MAX_PATH];
@@ -198,6 +199,10 @@ void DoSingle(char* title0, char* title1)
 
 	////////////////////////////////////////////////////////
 	// Scoring
+	MatchScoreFormula score(matcher, matcher.match_pair_sets[0]);
+	score.ComputeFeatures();
+	score.ComputeScore();
+	cout<<score.score;
 }
 
 void WindowCallback(int k, int event, int x, int y, int flags)

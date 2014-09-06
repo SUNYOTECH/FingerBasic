@@ -94,11 +94,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MatchScoreFormula.cpp" />
     <ClCompile Include="MinuDescMCC.cpp" />
     <ClCompile Include="MinuMatch.cpp" />
     <ClCompile Include="MinuMatchTico.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MatchScore.h" />
+    <ClInclude Include="MatchScoreFormula.h" />
     <ClInclude Include="MinuDesc.h" />
     <ClInclude Include="MinuDescMCC.h" />
     <ClInclude Include="MinuMatch.h" />
